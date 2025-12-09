@@ -4,20 +4,20 @@ const router =express.Router();
 import getGeminiResponse from "../utils/gemini.js";
 import { get } from "mongoose";
 
-router.post("/test",async(req,res)=>{
-    try{
-       const thread=new Thread({
-        threadId: "12345abcde",
-        title: "Sample Thread",
-       });
-      const result= await thread.save();
-      res.send(result);
-    }
-    catch(error){
-        console.error("Error in /test route:", error);
-        res.status(500).json({ error: "Internal Server Error" });
-    }
-});
+// router.post("/test",async(req,res)=>{
+//     try{
+//        const thread=new Thread({
+//         threadId: "12345abcde",
+//         title: "Sample Thread",
+//        });
+//       const result= await thread.save();
+//       res.send(result);
+//     }
+//     catch(error){
+//         console.error("Error in /test route:", error);
+//         res.status(500).json({ error: "Internal Server Error" });
+//     }
+// });
 
 //get all threads
 
