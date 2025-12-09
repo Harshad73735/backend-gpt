@@ -26,7 +26,7 @@ import chatRoutes from "./routes/chat.js";
   
 // })
 app.get("/test",async(req,res)=>{
-    res.json({message:"API is working"});
+    res.json({message:"finally connected"});
 });
 app.listen(8080,()=>{
     console.log("Server is running on port 8080");
