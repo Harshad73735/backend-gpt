@@ -19,8 +19,11 @@ import { get } from "mongoose";
 //     }
 // });
 
-//get all threads
 
+router.get("/",(req,res)=>{
+    res.send("app is working");
+});
+//get all threads
 router.get("/thread",async(req,res)=>{
     try{
         const threads = await Thread.find().sort({ updatedAt: -1 });  //descending order by updatedAt
